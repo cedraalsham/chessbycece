@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Chess</title>
+
+<style>
+body {
+    background-color: rgb(41, 38, 38);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ♟️ الستكرات */
+.stickers {
+    position: relative;
+    height: 120px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.sticker {
+    position: absolute;
+    font-size: 40px;
+    animation: float 1.8s ease-in-out infinite;
+    opacity: 0.9;
+    color: white;
+}
+
+.s1 { left: 10%; top: 20px; animation-delay: 0s; }
+.s2 { left: 25%; top: 50px; animation-delay: 0.3s; }
+.s3 { left: 45%; top: 25px; animation-delay: 0.6s; }
+.s4 { left: 65%; top: 60px; animation-delay: 0.9s; }
+.s5 { left: 80%; top: 30px; animation-delay: 1.2s; }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* زر الفيديو */
+.video-btn {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.video-btn:hover {
+    background-color: #90ee90;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ♟️ الستكرات -->
+<div class="stickers">
+    <div class="sticker s1">♙</div>
+    <div class="sticker s2">♞</div>
+    <div class="sticker s3">♝</div>
+    <div class="sticker s4">♜</div>
+    <div class="sticker s5">♛</div>
+</div>
+
+<h1 style="color: white; text-align: center;">
+Learn Chess
+</h1>
+
+<h2 style="color: green;">
+What is Chess?
+</h2>
+
+<p style="color: white;">
+Chess is a strategy game played between two players. The goal is to checkmate the opponent's king.
+</p>
+
+<!-- العنوان + الزر جنب بعض -->
+<h2 style="color: green; display: flex; align-items: center; gap: 10px;">
+    How the Pieces Move
+    <a href="https://youtu.be/OCSbzArwB10?si=QxZ6qz9ohC9sRHT6" target="_blank" class="video-btn">
+        Watch the video to begin
+    </a>
+</h2>
+
+<ul style="color: white;">
+   <li><b>Pawn:</b> moves forward, captures diagonally</li>
+   <li><b>Rook:</b> moves in straight lines</li>
+   <li><b>Knight:</b> moves in an L-shape</li>
+   <li><b>Bishop:</b> moves diagonally</li>
+   <li><b>Queen:</b> moves in all directions</li>
+   <li><b>King:</b> moves one square in any direction</li>
+</ul>
+
+<h2 style="color: green;">
+Goal of the Game
+</h2>
+
+<p style="color: white;">
+Protect your king while trying to checkmate the opponent's king.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess Tactics</title>
+
+<style>
+
+.stickers {
+    position: relative;
+    height: 120px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.sticker {
+    position: absolute;
+    font-size: 40px;
+    animation: float 1.8s ease-in-out infinite;
+    opacity: 0.9;
+    color: white;
+}
+
+
+.s1 { left: 10%; top: 20px; animation-delay: 0s; }
+.s2 { left: 25%; top: 50px; animation-delay: 0.3s; }
+.s3 { left: 45%; top: 25px; animation-delay: 0.6s; }
+.s4 { left: 65%; top: 60px; animation-delay: 0.9s; }
+.s5 { left: 80%; top: 30px; animation-delay: 1.2s; }
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+
+</head>
+
+<body style="background-color: rgb(41, 38, 38);">
+
+</head>
+
+<body style="background-color: rgb(41, 38, 38);">
+
+
+<div class="stickers">
+    <div class="sticker s1">♙</div>
+    <div class="sticker s2">♞</div>
+    <div class="sticker s3">♝</div>
+    <div class="sticker s4">♜</div>
+    <div class="sticker s5">♛</div>
+</div>
+
+<h1 style="color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+Chess Tactics
+</h1>
+
+
+<h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">
+  What are Tactics?
+</h2>
+<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+Tactics are short-term moves that help you gain an immediate advantage in the game.
+</p>
+
+<h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">
+  Common Tactics
+</h2>
+
+<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+  <b>Fork:</b> One piece attacks two pieces at the same time.</p>
+
+<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+  <b>Pin:</b> A piece cannot move without exposing a more valuable piece behind it.</p>
+
+<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+  <b>Skewer:</b> Forcing a valuable piece to move and exposing another behind it.</p>
+
+<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+<b>Discovered Attack:</b> Moving one piece to reveal an attack from another piece.</p>
+
+<h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">
+  Tip
+</h2>
+<p style="color: white; font-family: Arial, Helvetica, sans-serif;">
+  Always look for hanging pieces before making your move.
+</p>
+
+</body>
+</html>
